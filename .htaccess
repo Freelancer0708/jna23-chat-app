@@ -1,0 +1,18 @@
+
+RewriteEngine On 
+
+RewriteRule ^charge(.*)$ /$1 [L]
+RewriteRule ^charge(.*)$ /charge/$1 [R=301,L]
+
+RewriteRule ^chat(.*)$ /$1 [L]
+RewriteRule ^chat(.*)$ /chat/$1 [R=301,L]
+
+RewriteRule ^/(.*)$ /$1 [L]
+
+
+RewriteRule ^login(.*)$ /$1 [L]
+RewriteRule ^login(.*)$ /login/$1 [R=301,L]
+
+RewriteRule ^signup(.*)$ /$1 [L]
+RewriteRule ^signup(.*)$ /signup/$1 [R=301,L]
+
